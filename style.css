@@ -1,6 +1,8 @@
 h1{
     Color:blue;
-    font-size: 32px;
+    font-size: 100px;
+    margin: 50px;
+    padding: 50;
 }
 h2{
     font-size: 24px;
