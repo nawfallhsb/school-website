@@ -1,0 +1,33 @@
+h1{
+    Color:blue;
+    font-size: 32px;
+}
+h2{
+    font-size: 24px;
+}
+nav{
+    background-color: #333333;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: lightblue;
+}
+body{
+    font-family: Arial,sans-serif;
+color: #333333;
+line-height: 1.6;
+}
+.intro{
+    font-weight: bold;
+}
+.opvallend{
+    background-color: blue;
+}
+.gedraaid {
+transform: rotate(180deg);
+}
