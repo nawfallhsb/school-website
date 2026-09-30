@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="NL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Never Mon Amour</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date? ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #ffe6eb;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 45px;
+            color: #e63967;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 15px 35px;
+            font-size: 20px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        #yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #yes:hover {
+            transform: scale(1.1);
+        }
+
+        #no {
+            background-color: #e63946;
+            color: white;
+            position: fixed;
+        }
+
+        #answer {
+            margin-top: 30px;
+            font-size: 30px;
+            color: #e63967;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Do you love me? ❤️</h1>
+
+        <p>Think carefully about your answer... 👀</p>
+
+        <div class="buttons">
+
+            <button id="yes" onclick="yesClicked()">
+                YESSS ❤️
+            </button>
+
+            <button id="no">
+                No 😢
+            </button>
+
+        </div>
+
+        <div id="answer"></div>
+
+    </div>
+
+    <script>
+
+        // Select the "No" button
+        const noButton = document.querySelector("#no");
+
+        // When she tries to hover over the No button
+        noButton.addEventListener("mouseover", function() {
+
+            // Generate a random position on the screen
+            const randomX = Math.random() * (window.innerWidth - 150);
+            const randomY = Math.random() * (window.innerHeight - 80);
+
+            // Move the button
+            noButton.style.left = randomX + "px";
+            noButton.style.top = randomY + "px";
+
+        });
+
+        // When she clicks YES
+        function yesClicked() {
+
+            document.querySelector("#answer").innerHTML =
+                "YEEEESSSS 🥰❤️ I knew you would say yes!";
+
+            noButton.style.display = "none";
+        }
+
+    </script>
+
+</body>
+</html>
+    
