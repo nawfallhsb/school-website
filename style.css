@@ -33,3 +33,9 @@ line-height: 1.6;
 .gedraaid {
 transform: rotate(180deg);
 }
+.accent{
+    color:blue;
+    background-color: white;
+    padding-left: 10px;
+    margin: 20px;   
+}
