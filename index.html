@@ -17,36 +17,48 @@
         <a href="over-mij.html">Over mij</a>
     </nav>
     <main>
-        <p class="intro">Hier komt meer tekst te staan</p>
-        <button onclick="veranderAchtergrond()">Verander achtergrond</button>
+    <section id="over-mij">
+        <h2>Over mij</h2>
+        <p>Jouw tekst hier.</p>
+    </section>
 
-        <p>Dit is een test voor Git.</p>
+    <section id="wat-ik-leer">
+        <h2>Wat ik leer</h2>
+        <p>Korte intro over je opleiding en wat je tot nu toe hebt gehad.</p>
+    </section>
 
-        <button id="telKnop">Tel de koppen</button>
-        <button id="accentKnop">Wissel accent</button>
-<p id="aantalKoppen"></p>
-        <h2>Dit is het tweede gedeelte</h2>
-        <p>Hier komt nog meer tekst te staan</p>
+    <section id="demos">
+        <h2>Mijn oefeningen</h2>
+        <p>Hieronder test ik functionaliteiten die ik tijdens mijn opleiding leer.</p>
 
-        <h2 class="accent">Over deze website</h2>
-        <p>Hier komt nog meer tekst te staan</p>
-        <h2>Mijn opdrachten</h2>
-        <p>Hier komt nog meer tekst te staan</p>
-        <h2 class="accent">De stappen die ik zet </h2>
-        <p>Hier komt nog meer tekst te staan</p>
-        <h2>Dit is het laatse gedeelte</h2>
-        <p>Hier komt nog meer tekst te staan</p>
+        <article class="demo">
+            <h3>Achtergrond wisselen</h3>
+            <p>Een knop die met JavaScript een class toevoegt of weghaalt.</p>
+            <button id="achtergrondKnop">Verander achtergrond</button>
+        </article>
 
-        <ul>
-            <li>Auto</li>
-            <li>Vliegtuig</li>
-            <li>Helikopter</li>
-        </ul>
-        <img src="images/full.jpg.webp" alt="Witte auto" width="300">
-        <button onclick="draaiAfbeelding()">Draai afbeelding</button>
-        <button onclick="afbeeldingRechtop()">Afbeelding rechtop</button>
-        <p id="uitkomst"></p>
-    </main>
+        <article class="demo">
+            <h3>Koppen tellen</h3>
+            <p>Alle h2-koppen selecteren en met een herhaling tellen.</p>
+            <button id="telKnop">Tel de koppen</button>
+            <p id="aantalKoppen"></p>
+        </article>
+
+        <article class="demo">
+            <h3>Accent wisselen</h3>
+            <p>Bij alle koppen een class aan- of uitzetten.</p>
+            <button id="accentKnop">Wissel accent</button>
+        </article>
+
+        <article class="demo">
+            <h3>Afbeelding draaien</h3>
+            <p>Een CSS-transform aansturen vanuit JavaScript.</p>
+            <img src="images/full.jpg.webp" alt="Witte auto" width="300">
+            <button id="draaiKnop">Draai afbeelding</button>
+            <button id="rechtopKnop">Afbeelding rechtop</button>
+        </article>
+    </section>
+</main>
     <footer>
         <p>Mijn eerste website voor school</p>
     </footer>
