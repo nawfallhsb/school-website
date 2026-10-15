@@ -1,0 +1,17 @@
+[
+    {
+        "titel": "Nacht in de stad",
+        "zaal": "1",
+        "Plaatsen":24
+    },
+    {
+        "titel": "Reis naar Mars",
+        "zaal": "2",
+        "Plaatsen": 0
+    },
+    {
+        "titel": "Spiderman",
+        "zaal": "3",
+        "Plaatsen": 20
+    }
+]
